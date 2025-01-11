@@ -1,0 +1,50 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^3.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "bootstrap": "^5.1.3",
+    "emailjs-com": "^3.2.0",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.2.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^4.12.0",
+    "react-parallax-tilt": "^1.7.42",
+    "react-pdf": "^9.2.1",
+    "react-router-dom": "^6.2.2",
+    "tsparticles": "^3.7.1",
+    "typewriter-effect": "^2.18.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd mailbackend && node server.js",
+    "client": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^4.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

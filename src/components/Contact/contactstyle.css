@@ -1,0 +1,103 @@
+.contact-form-container {
+    min-height: 100vh;
+    background-color: #0f0a1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.contact-form-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    background-color: #100522;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contact-form-box:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form-box h2 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #a0a0a0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-form-box h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-form div {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2a2438;
+    border: 1px solid #5c4f6d;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #9a74cc;
+    box-shadow: 0 0 10px rgba(154, 116, 204, 0.5);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+}
+
+.contact-form button {
+    padding: 1rem 2.5rem;
+    background-color: #352f47;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    display: inline-block; /* Changed from block to inline-block */
+    max-width: 250px; /* Added a max width */
+    margin: 0 auto; /* Centering the button horizontally */
+}
+
+.contact-form button:hover {
+    background-color: #443a53;
+    transform: translateY(-2px);
+}
+
+.contact-form button:disabled {
+    background-color: #6c5b7b;
+    cursor: not-allowed;
+}
+.contact-form-box p {
+    text-align: center;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
