@@ -8,7 +8,7 @@ export default function ContactForm() {
     message: ''
   });
 
-  const [isLoading, setIsLoading] = useState(false); // Track loading state
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,10 +20,8 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
-    setIsLoading(true); // Set loading to true when form is being submitted
-
-    // Send the form data to the backend
     fetch('http://localhost:5000/send', {
       method: 'POST',
       headers: {
@@ -38,21 +36,21 @@ export default function ContactForm() {
       } else {
         alert('Failed to send message. Please try again later.');
       }
-      setIsLoading(false); // Reset loading state
+      setIsLoading(false);
     })
     .catch(error => {
       console.error('Error sending message:', error);
       alert('Failed to send message. Please try again later.');
-      setIsLoading(false); // Reset loading state on error
+      setIsLoading(false);
     });
   };
 
   return (
     <div className="contact-form-container">
       <div className="contact-form-box">
-        <h2>Get in Touch</h2>
-        <h1>Contact Me</h1>
-        
+        <h1>Let's Connect</h1>
+        <p>Have a question or just want to say hi? Drop me a message!</p>
+
         <form onSubmit={handleSubmit} className="contact-form" id="contact-form">
           <div>
             <label htmlFor="name">Your Name</label>
@@ -91,7 +89,9 @@ export default function ContactForm() {
             />
           </div>
 
-          <button type="submit" disabled={isLoading}>{isLoading ? 'Sending...' : 'Send'}</button>
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? <span className="loading-dots">Sending</span> : 'Send Message'}
+          </button>
         </form>
       </div>
     </div>

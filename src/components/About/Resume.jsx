@@ -7,12 +7,12 @@ function Resume() {
   return (
     <Container>
       <p style={{ marginBottom: "10px", fontSize: "16px", color: "#fff" }}>
-        Feel free to view or download my resume below:
+      Click below to view or download my resume and explore my professional journey.
       </p>
 
       {/* Download Button */}
-      <Row style={{ justifyContent: "center", position: "relative" }}>
-        <Button variant="primary" href={pdf} target="_blank" style={{ maxWidth: "250px" }}>
+      <Row style={{ justifyContent: "center", position: "relative", marginBottom: "20px" }}>
+        <Button variant="primary" href={pdf} target="_blank" style={{ maxWidth: "190px" }}>
           <AiOutlineDownload />
           &nbsp;Download Resume
         </Button>

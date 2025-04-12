@@ -15,34 +15,32 @@ function Home2() {
       <Container>
       <Row>
   <Col md={8} className="home-about-description">
-    <h1 style={{ fontSize: "2.6em" }}>
-      <span className="purple">Welcome</span> to My Website!
-    </h1>
-    
-    <p className="home-about-body"> 
-      I'm <b className="purple">  Ayush Khandelwal  </b>, a passionate developer who fell in love with coding early on. Although still learning, I'm constantly growing my skills in different technologies. 🤷‍♂️
-      <br />
-      <br />
-      I am always eager to learn, innovate, and build impactful solutions.
-      
-      <br />
-      <br />
-      Here, you'll find my 
-      <i>
-        <b className="purple"> latest projects, skills, and aspirations.  </b>
-      </i>
-       I'm constantly exploring new technologies and 
-      <b className="purple"> seeking opportunities to collaborate and grow </b>in the tech industry.
-      <br />
-      <br />
-      Feel free to explore my work and
-      <b className="purple"> let's connect</b> to discuss
-      <i>
-        <b className="purple"> ideas</b> or <b className="purple">opportunities!</b>
-      </i>
-     
-      
-    </p>
+
+   <h1 style={{ fontSize: "2.6em" }}>
+  <span className="purple">Welcome</span> to my digital space!
+</h1>
+
+<p className="home-about-body">
+  I'm <b className="purple">Ayush Khandelwal</b>, an enthusiastic developer who loves to build, learn, and innovate.  
+  <br />
+  <br />
+  While still on my learning journey, I enjoy exploring different technologies and working on meaningful projects.
+  <br />
+  <br />
+  This space showcases my 
+  <i>
+    <b className="purple"> projects, skills, and developer journey. </b>
+  </i>
+  I’m always looking for ways to collaborate, grow, and make a difference through tech.
+  <br />
+  <br />
+  Feel free to check out my work and
+  <b className="purple"> let’s connect</b> to build something amazing —
+  <i>
+    <b className="purple"> together!</b>
+  </i>
+</p>
+
   </Col>
   <Col md={4} className="myAvtar">
     <Tilt>
@@ -69,7 +67,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=khandelwalayush976@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=ayushdev186@gmail.com.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,16 +85,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/ayushk.18/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
+             
             </ul>
           </Col>
         </Row>

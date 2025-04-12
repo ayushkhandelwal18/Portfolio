@@ -77,9 +77,11 @@ button:focus {
 /* --------- */
 .sticky {
   background-color: #1b1a2ea9 !important;
-  transition: all 0.3s ease-out 0s !important;
+  transition: all 0.3s ease-in-out !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
+  padding: 0.2rem 2rem !important;
+  font-size: 1.1rem !important;
 }
 
 .navbar {
@@ -115,7 +117,6 @@ button:focus {
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
   transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
@@ -149,14 +150,6 @@ button:focus {
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
-}
-.navbar-brand {
-  color: rgb(250, 250, 250) !important;
-}
-
-.logo {
-  width: 100px;  /* Set desired width */
-  height: auto;  /* Maintain aspect ratio */
 }
 
 .navbar-nav .nav-link {
@@ -204,6 +197,39 @@ button:focus {
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
+
+/* ------------------------------------- */
+/* ✅ Custom Styled Name (instead of logo) */
+/* ------------------------------------- */
+.navbar-name {
+  margin-top: 4px;
+  font-size: 1.5rem;
+  font-weight: 00;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.brand-name {
+  display: inline-block;
+  background: linear-gradient(90deg, #c95bf5, #5e50f4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-left: 2px;
+}
+
+.highlight {
+  font-weight: 700;
+  color: inherit;
+}
+
+
+
 
 /* --------- */
 /* Home section */
@@ -393,6 +419,8 @@ button:focus {
   color: #700c86 !important;
 }
 
+
+
 /* --------- */
 /* Footer */
 /* --------- */
@@ -439,6 +467,7 @@ button:focus {
 /* --------- */
 /* Projects */
 /* --------- */
+
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -461,54 +490,23 @@ button:focus {
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-}
-
 .card-img-top {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
-}
-
-.blog-img {
-  padding: 0px !important;
-  opacity: 0.8 !important;
-  border-radius: 0px !important;
+  height: 200px !important;
+  width: 100% !important;
+  object-fit: cover !important;
 }
 
 .btn-primary {
@@ -522,10 +520,12 @@ button:focus {
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
@@ -545,6 +545,7 @@ button:focus {
   color: white !important;
 }
 
+/* ----- Tech Stack Icons ----- */
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
@@ -571,6 +572,39 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
+/* ----- Exploring / Learning Skills (Faded) ----- */
+.faded-skill {
+  opacity: 0.6 !important;
+  filter: grayscale(30%) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.faded-skill:hover {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* ----- Academic Tool Icons ----- */
+.academic-icons {
+  font-size: 1em !important;
+  text-align: center !important;
+  border: 1.5px dashed rgba(147, 112, 219, 0.4) !important;
+  margin: 10px !important;
+  padding: 15px !important;
+  color: #d2b5ff !important;
+  background-color: rgba(77, 43, 120, 0.1) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease;
+}
+
+.academic-icons:hover {
+  border-color: rgba(197, 115, 230, 0.9) !important;
+  transform: scale(1.05);
+  background-color: rgba(77, 43, 120, 0.18) !important;
+}
+
+/* ----- Misc ----- */
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -593,6 +627,7 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
 /* --------- */
 /* Resume */
 /* --------- */

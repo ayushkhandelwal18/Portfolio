@@ -1,35 +1,47 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 
-
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Ayush Khandelwal </span>
-            a <span className="purple">second-year </span>B.Tech student at the
-            <span className="purple"> Indian Institute of Information Technology, Kota, </span>
-            specializing in<span className="purple"> Electronics and Communication Engineering.</span>
+            Hi Everyone, I’m <span className="purple">Ayush Khandelwal</span>, a
+            <span className="purple"> B.Tech student (Batch 2023–2027)</span> at
+            the
+            <span className="purple">
+              {" "}
+              Indian Institute of Information Technology, Kota
+            </span>
+            , pursuing my degree in{" "}
+            <span className="purple">
+              Electronics and Communication Engineering
+            </span>
+            .
             <br />
             <br />
-            I am a MERN Stack Developer, eager to apply my skills 
-            in creating innovative projects and seeking opportunities
-             to gain practical experience in the tech industry. 
+            I’m a passionate{" "}
+            <span className="purple">MERN Stack Developer</span>, always looking
+            to create meaningful and innovative projects. <br />I constantly
+            seek <span className="purple">opportunities</span> to apply my
+            skills and gain real-world experience in the tech space.
             <br />
-            Along with this, I am actively learning Data Structures and Algorithms to further enhance my programming skills.
+            <br />
+            I'm also sharpening my problem-solving abilities by actively
+            learning
+            <span className="purple"> Data Structures and Algorithms</span>.
             <br />
             <br />
-            Apart from coding, I have a keen interest in startups and business, 
-            with an entrepreneurial mindset and a passion for innovation and building new solutions.
+            Beyond coding, I’m deeply interested in{" "}
+            <span className="purple">startups</span> and
+            <span className="purple"> entrepreneurship</span>, driven by a
+            mindset focused on innovation and building impactful solutions.
           </p>
-         
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Let's connect and create impactful solutions together!"{" "}
+            "Together, let's build something meaningful and make an impact!"
           </p>
-          
         </blockquote>
       </Card.Body>
     </Card>

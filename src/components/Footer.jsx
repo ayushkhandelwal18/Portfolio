@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineMail,
-  AiFillInstagram,
+  
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -33,7 +33,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=khandelwalayush976@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ayushdev186@gmail.com.com"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -52,16 +52,7 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/ayushk.18/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+            
           </ul>
         </Col>
       </Row>
