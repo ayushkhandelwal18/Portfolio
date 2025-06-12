@@ -50,24 +50,24 @@ function About() {
         <Toolstack />
 
         
-       {/* --- Activities & Involvement Section --- */}
-       <h1 className="project-heading">
+{/* --- Activities & Involvement Section --- */}
+<h1 className="project-heading" style={{ textAlign: "center", marginBottom: "0.5rem" }}>
   Other <strong className="purple">Activities & Involvement</strong>
 </h1>
-<p style={{ textAlign: "center", color: "#aaa", fontSize: "16px", marginBottom: "20px" }}>
+
+<p style={{ textAlign: "center", color: "#aaa", fontSize: "16px", marginBottom: "32px" }}>
   Contributing beyond classrooms through clubs and events.
 </p>
 
-<ul style={{ color: "#ddd", paddingLeft: "1rem", fontSize: "16px", lineHeight: "1.6" }}>
-  <li style={{ listStyleType: "none", marginBottom: "1rem" }}>
-    <span style={{ fontSize: "20px" }}>
-      🚀 <strong >Social Media & Outreach,<span className="purple"> IIIT Kernel</span></strong> – The official tech club of IIIT Kota focused on connecting students with
-      <strong> industry professionals, mentors, and alumni</strong> through technical events and mentorship sessions.
-    </span>
-
-    <span style={{ display: "block", marginTop: "6px", paddingLeft: "2rem", fontSize: "15.5px", color: "#ccc" }}>
+<ul style={{ color: "#ddd", listStyle: "none", paddingLeft: "0", fontSize: "16px", lineHeight: "1.8", maxWidth: "800px", margin: "0 auto" }}>
+  <li style={{ marginBottom: "1.5rem",  padding: "1rem 1.5rem" }}>
+    <div style={{ fontSize: "20px", marginBottom: "6px" }}>
+      🚀 <strong>Social Media & Outreach, <span className="purple">IIIT Kernel</span></strong>
+    </div>
+    <div style={{ color: "#ccc", fontSize: "15.5px", paddingLeft: "1.5rem" }}>
+      The official tech club of IIIT Kota focused on connecting students with <strong>industry professionals, mentors, and alumni</strong> through technical events and mentorship sessions.<br /><br />
       As a Social Media team member, I contributed to growing our club’s <strong>Instagram and LinkedIn reach</strong>, collaborated with other teams to organize speaker sessions, and helped boost engagement during events and challenges.
-    </span>
+    </div>
   </li>
 </ul>
 

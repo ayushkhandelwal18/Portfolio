@@ -29,8 +29,27 @@ app.post('/send', (req, res) => {
     from: email,
     to: process.env.EMAIL_USER,
     subject: `New Message from ${name}`,
-    text: `Hello Ayush Khandelwal,\n\nYou have a new message from ${name} from the contact page.\n\nDetails:\nName: ${name}\nEmail: ${email}\nMessage: ${message}\n\nBest regards,\nYour Website`
+    html: `
+      <div style="font-family: Arial, sans-serif; padding: 20px;">
+        <h2>New Contact Message 📩</h2>
+        <p><strong>Hello Ayush Khandelwal,</strong></p>
+        <p>You have received a new message from the contact form on your portfolio website.</p>
+        
+        <hr />
+        <h3>📝 Message Details</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+        <p><strong>Message:</strong><br/> ${message}</p>
+        <hr />
+        
+        <p style="font-size: 0.9em; color: gray;">This message was sent from your portfolio's contact form.</p>
+        <p style="font-weight: bold;">— Ayush's Portfolio</p>
+      </div>
+    `
   };
+
+
+
   
 
   transporter.sendMail(mailOptions, (error, info) => {

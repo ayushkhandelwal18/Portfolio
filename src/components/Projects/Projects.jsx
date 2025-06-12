@@ -24,7 +24,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
 
-        <Col md={4} className="project-card">
+        {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={rideimg}
               isBlog={false}
@@ -42,7 +42,7 @@ function Projects() {
               Features include user authentication, real-time driver tracking, ride requests, and route mapping."
               ghLink="https://github.com/ayushkhandelwal18/BookMyRide"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
