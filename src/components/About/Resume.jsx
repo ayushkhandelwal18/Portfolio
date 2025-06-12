@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../../Assets/resume.pdf";  // Ensure the PDF path is correct
+import pdf from "../../Assets/Ayush Khandelwal.pdf"; 
 
 function Resume() {
   return (
