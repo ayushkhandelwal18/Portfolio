@@ -22,7 +22,7 @@ export default function ContactForm() {
     e.preventDefault();
     setIsLoading(true);
 
-    fetch('http://localhost:5000/send', {
+    fetch('https://portfolio-backend-b8vr.onrender.com/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
