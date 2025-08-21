@@ -12,7 +12,7 @@ function Resume() {
       <Row style={{ justifyContent: "center", position: "relative", marginBottom: "20px" }}>
         <Button
           variant="primary"
-          href="https://drive.google.com/file/d/1OzP-k9Ar2EzehjzaNqBpKRfSj4kZCVGP/view?usp=sharing"
+          href="https://drive.google.com/file/d/1uZHFKHe-qeOPShym-eoelwhMSwFLe63M/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           style={{ maxWidth: "220px" }}
