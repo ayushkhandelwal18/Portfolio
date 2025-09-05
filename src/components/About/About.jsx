@@ -5,7 +5,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
-import Resume from "./Resume";
+// import Resume from "./Resume";
 
 function About() {
   return (
@@ -62,11 +62,11 @@ function About() {
 <ul style={{ color: "#ddd", listStyle: "none", paddingLeft: "0", fontSize: "16px", lineHeight: "1.8", maxWidth: "800px", margin: "0 auto" }}>
   <li style={{ marginBottom: "1.5rem",  padding: "1rem 1.5rem" }}>
     <div style={{ fontSize: "20px", marginBottom: "6px" }}>
-      🚀 <strong>Social Media & Outreach, <span className="purple">IIIT Kernel</span></strong>
+      🚀 <strong>Social Media Lead, <span className="purple">IIIT Kernel</span></strong>
     </div>
     <div style={{ color: "#ccc", fontSize: "15.5px", paddingLeft: "1.5rem" }}>
       The official tech club of IIIT Kota focused on connecting students with <strong>industry professionals, mentors, and alumni</strong> through technical events and mentorship sessions.<br /><br />
-      As a Social Media team member, I contributed to growing our club’s <strong>Instagram and LinkedIn reach</strong>, collaborated with other teams to organize speaker sessions, and helped boost engagement during events and challenges.
+      As a Social Media Lead, Increased <strong>club engagement by ∼50% by leading a team</strong> in strategic content planning and campaign execution.
     </div>
   </li>
 </ul>
@@ -92,10 +92,10 @@ function About() {
  <br />
 
 
-        <h1 className="project-heading">
+        {/* <h1 className="project-heading">
           Take a Look at My <strong className="purple">Resume</strong>
         </h1>
-        <Resume />
+        <Resume /> */}
 
 
 

@@ -5,7 +5,8 @@ import ProjectCard from "./ProjectCards";
 import restauraunt from "../../Assets/restauraunt.jpg";
 import ecommm from "../../Assets/ecommimage.jpeg";
 import realtimeimg from "../../Assets/realtimeimg.jpeg";
-import rideimg from "../../Assets/rideimg.jpeg";
+import aibuudy from "../../Assets/chatt.png";
+import workflow from "../../Assets/worflow.png";
 import virtual from "../../Assets/virtual.jpeg";
 
 
@@ -23,11 +24,11 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-
-        {/* <Col md={4} className="project-card">
+             
+              <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={rideimg}
-              isBlog={false}
+              imgPath={aibuudy}
+              
               title={
                 <span style={{
                   fontWeight: 'bold',
@@ -35,19 +36,21 @@ function Projects() {
                   padding: '4px 8px',
                   borderRadius: '6px'
                 }}>
-                  🚕 BookMyRide (In Progress)
+                  🤖 AI-Buddy
                 </span>
               }
-              description="Building a full-stack ride-booking platform inspired by Uber using the MERN stack.
-              Features include user authentication, real-time driver tracking, ride requests, and route mapping."
-              ghLink="https://github.com/ayushkhandelwal18/BookMyRide"
+              
+              description="AI-Buddy 🤖 – A secure, modern MERN stack chatbot using Google Gemini API, with JWT-based authentication,
+               chat history in MongoDB, and a responsive React + Vite + Material UI interface.."
+              ghLink="https://github.com/ayushkhandelwal18/AI-Chat-Bot"
+              demoLink="https://ai-chat-bot-cauj.onrender.com/"
             />
-          </Col> */}
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ecommm}
-              isBlog={false}
+            
               title={
                 <span style={{
                   fontWeight: 'bold',
@@ -68,7 +71,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={realtimeimg}
-              isBlog={false}
+            
               title={
                 <span style={{
                   fontWeight: 'bold',
@@ -85,10 +88,31 @@ function Projects() {
             />
           </Col>
 
+
+              <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={workflow}
+             
+              title={
+                <span style={{
+                  fontWeight: 'bold',
+                  color: '#c770f0',
+                  padding: '4px 8px',
+                  borderRadius: '6px'
+                }}>
+                  MyFirstAIAgent 
+                </span>
+              }
+              description="A starter AI agent workflow built with n8n, integrating OpenAI, Calculator, and SerpAPI.
+               Handles code generation, math calculations, and real-time queries with ease."
+              ghLink="https://github.com/ayushkhandelwal18/myfirstAIAgent"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={restauraunt}
-              isBlog={false}
+             
               title={
                 <span style={{
                   fontWeight: 'bold',
@@ -107,10 +131,13 @@ function Projects() {
           </Col>
 
 
+       
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={virtual}
-              isBlog={false}
+             
               title={
                 <span style={{
                   fontWeight: 'bold',

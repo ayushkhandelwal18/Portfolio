@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../Assets/mylogo.png";
+
 
 import {
   AiOutlineHome,
@@ -11,6 +11,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -89,6 +90,23 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/resume"
+                className={location.pathname === "/resume" ? "active-link" : ""}
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+
+
+
+
+
           </Nav>
         </Navbar.Collapse>
       </Container>

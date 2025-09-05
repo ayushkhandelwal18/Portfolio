@@ -48,8 +48,10 @@ export default function ContactForm() {
   return (
     <div className="contact-form-container">
       <div className="contact-form-box">
-        <h1>Let's Connect</h1>
-        <p>Have a question or just want to say hi? Drop me a message!</p>
+        <h1 style={{ color: "#c770f0" }}>Get in Touch</h1>
+          <p>
+  Having a <span style={{ color: "#c770f0" }}>project</span>, <span style={{ color: "#c770f0" }}>freelance work</span>, <span style={{ color: "#c770f0" }}>internship</span>, or any <span style={{ color: "#c770f0" }}>collaboration</span> in mind? Just drop a message—I’ll reach out!
+</p>
 
         <form onSubmit={handleSubmit} className="contact-form" id="contact-form">
           <div>
