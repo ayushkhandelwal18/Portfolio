@@ -1,52 +1,46 @@
-import React, { useState, useEffect } from "react";
-import Preloader from "./components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
-import Resume from "./components/About/Resume";
-
-import Contact from "./components/Contact/contact";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import { Navbar } from './components/Navbar';
+import { Hero } from './sections/Hero';
+import { About } from './sections/About';
+import { TechStack } from './sections/TechStack';
+import { Projects } from './sections/Projects';
+import { Contact } from './sections/Contact';
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-           <Route path="/contact" element={<Contact />} />
-           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="relative min-h-screen bg-[#0a0a0a] font-sans text-slate-50 selection:bg-brand-500/30 selection:text-brand-200">
+      {/* Global Background Grid Pattern */}
+      <div className="fixed inset-0 z-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-40"></div>
+      
+      <Navbar />
+
+      <main className="relative z-10 flex flex-col space-y-0 selection:bg-neon-purple/30 selection:text-white">
+        <Hero />
+        <About />
+        <TechStack />
+        <Projects />
+        <Contact />
+      </main>
+
+      {/* Footer */}
+      <footer className="relative z-10 py-12 border-t border-white/[0.05] text-center bg-[#0a0a0a]">
+        <h2 className="text-xl font-bold mb-6 text-white tracking-widest font-mono">
+          <span className="text-brand-400">AYUSH</span>.DEV
+        </h2>
+        <div className="flex justify-center items-center gap-6 mb-8 text-slate-500">
+          <a href="https://www.linkedin.com/in/ayush-khandelwal-5234a3288/" target="_blank" rel="noreferrer" className="hover:text-brand-400 transition-colors uppercase text-xs tracking-[0.2em]">LinkedIn</a>
+          <span className="w-1 h-1 rounded-full bg-slate-700 block"></span>
+          <a href="https://github.com/ayushkhandelwal18" target="_blank" rel="noreferrer" className="hover:text-brand-400 transition-colors uppercase text-xs tracking-[0.2em]">GitHub</a>
+          <span className="w-1 h-1 rounded-full bg-slate-700 block"></span>
+          <a href="https://leetcode.com/u/khayksh0/" target="_blank" rel="noreferrer" className="hover:text-brand-400 transition-colors uppercase text-xs tracking-[0.2em]">LeetCode</a>
+          <span className="w-1 h-1 rounded-full bg-slate-700 block"></span>
+          <a href="https://codolio.com/profile/ayushk26" target="_blank" rel="noreferrer" className="hover:text-brand-400 transition-colors uppercase text-xs tracking-[0.2em]">Codolio</a>
+        </div>
+        <p className="text-slate-500 text-sm font-mono opacity-60">
+          Designed & Built by Ayush Khandelwal <span className="text-brand-500 animate-pulse">■</span>
+        </p>
+      </footer>
+    </div>
   );
 }
 
